@@ -8,5 +8,12 @@ class MainFrame : public wxFrame
 	/*It is a top-level window that can be created with a title, size, and style.*/
 public:
 	MainFrame(const wxString& title);
+private: 
+	/*Event handler for the button click event*/
+	void OnButtonClicked(wxCommandEvent& evt);
+	void OnSliderChanged(wxCommandEvent& evt);
+	void OnTextChanged(wxCommandEvent& evt);
+	/*Binding the event handler to the button events using an event table*/
+	wxDECLARE_EVENT_TABLE();
 };
 
