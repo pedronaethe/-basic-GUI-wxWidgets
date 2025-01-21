@@ -14,6 +14,5 @@ private:
 	void OnSliderChanged(wxCommandEvent& evt);
 	void OnTextChanged(wxCommandEvent& evt);
 	/*Binding the event handler to the button events using an event table*/
-	wxDECLARE_EVENT_TABLE();
 };
 
