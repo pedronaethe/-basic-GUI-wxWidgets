@@ -10,9 +10,10 @@ public:
 	MainFrame(const wxString& title);
 private: 
 	/*Event handler for the button click event*/
-	void OnButtonClicked(wxCommandEvent& evt);
-	void OnSliderChanged(wxCommandEvent& evt);
-	void OnTextChanged(wxCommandEvent& evt);
+	void OnAnyButtonClicked(wxCommandEvent& evt);
+	void OnButton1Clicked(wxCommandEvent& evt);
+	void OnButton2Clicked(wxCommandEvent& evt);
+	void OnCloseEvent(wxCloseEvent& evt);
 	/*Binding the event handler to the button events using an event table*/
 };
 
